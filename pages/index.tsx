@@ -2,11 +2,14 @@ import Head from 'next/head';
 import Button from '../components/ui/Button'
 import styled from "styled-components";
 export default function Home() {
+  <Head>
+      <title>randomYouTube.video</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="description" content="Random YouTube Video"></meta>
+  </Head>
   return (
     <Wrapper>
-      <TextWrapper>
-        <HeaderText>random<Strong>You<Red>Tube</Red></Strong>.video</HeaderText>
-      </TextWrapper>
+      
     </Wrapper>
   )
 }
@@ -14,21 +17,4 @@ export default function Home() {
 
 const Wrapper = styled.div`
   padding: 4em;
-`
-const TextWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`
-const HeaderText = styled.p`
-  font-size: 75x;
-  text-align: inline;
-`
-const Red = styled.span`
-  color: red;
-`
-const Strong = styled.strong`
-  font-weight: 1200;
-`
-const ExtraStrong = styled.strong`
-  font-weight: 2200;
 `
