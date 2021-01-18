@@ -6,9 +6,9 @@ import Link from "next/link";
 
 function Footer() {
     return <Wrapper>
-        <Text>next-js-template</Text>
+        <Text>random<Strong>You<Red>Tube</Red></Strong>.video</Text>
         <LinkWrapper>
-            <Link href={"https://prosavage.net"}>By ProSavage</Link>
+            <Link href={"https://github.com/JasonWet"}>By JasonWet</Link>
         </LinkWrapper>
     </Wrapper>
 }
@@ -46,7 +46,12 @@ const Text = styled.p`
     padding-left: 10px;
     font-size: 14px;
 `
-
+const Red = styled.span`
+    color: red;
+`
+const Strong = styled.strong`
+    font-weight: 1600;
+`
 const LinkWrapper = styled.div`
     padding-right: 10px;
 `

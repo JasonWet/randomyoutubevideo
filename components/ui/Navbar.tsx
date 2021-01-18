@@ -13,12 +13,12 @@ const links = [
         text: "Home"
     },
     {
-        link: "/faq",
-        text: "FAQ"
+        link: "https://discord.gg/ndSEuKR",
+        text: "Discord"
     },
     {
-        link: "/contact",
-        text: "Contact"
+        link: "/about",
+        text: "About"
     }
 ]
 
@@ -54,7 +54,7 @@ export default function Navbar(props) {
         <Wrapper>
             <Content>
                 <LogoSection>
-                    <Logo src={`/img/navbar/${getLogoPath()}`} />
+                    <Text>random<Strong>You<Red>Tube</Red></Strong>.video</Text>
                     {!isDesktop() && <HamburgerButton onClick={() => setToggled(!toggled)} />}
                 </LogoSection>
                 {(toggled || isDesktop()) && <LinksWrapper>
@@ -126,10 +126,18 @@ const HamburgerButton = styled.div`
     border-bottom: 1px solid ${(props: PropsTheme) => props.theme.color};
 `
 
-const Logo = styled.img`
-    width: auto;
-    height: 3em;
-    padding: 10px;
+const Text = styled.p`
+    padding-left: 10px;
+    font-size: 25px;
+    @media(min-width: 700px) {
+        justify-content: center;
+    }
+`
+const Red = styled.span`
+    color: red;
+`
+const Strong = styled.strong`
+    font-weight: 1600;
 `
 const LinkWrapper = styled.div`
     display: flex;
