@@ -22,11 +22,8 @@ export async function getServerSideProps() {
 
 
 export default function Home(props) {
-  console.log('choice', props.choice);
-  console.log('data', props.data);
-
   <Head>
-      <title>randomYouTubevideo</title>
+      <title>RYTV</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width"></meta>
       <meta name="description" content="Random YouTube Video"></meta>
   </Head>
